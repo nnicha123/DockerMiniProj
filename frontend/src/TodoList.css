@@ -1,0 +1,110 @@
+.todoWrapper{
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 35px;
+}
+.todoItems,.todoItemsAdd,.todoItemsEdit{
+    margin: 25px;
+    padding: 20px;
+    height: 250px;
+    width: 200px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.3);
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: gray;
+}
+.todoItemsEdit{
+    z-index: 100;
+}
+.todoItemsAdd{
+    margin: 0;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    align-items:center ;
+}
+.todoItemsAdd .form-group{
+    width: 230px;
+}
+
+.todoItemsAdd h3{
+    text-align: center;
+}
+
+.todoItems h3{
+    letter-spacing: 2px;
+}
+.todoItems button,.todoItemsAdd button, .todoItemsEdit button{
+    margin-top: 25px;
+    padding: 10px 0;
+    border: none;
+    background-color: rgb(236, 214, 117);
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.todoItems button:hover{
+    background-color: rgb(211, 177, 27);
+    cursor: pointer;
+}
+.todoItemsAdd button{
+    width: 100px;
+}
+
+.todoItems > *{
+    padding-left: 10px;
+}
+.todoItems .EditButton,.todoItemsAdd button{
+    background-color: rgb(114, 192, 131);
+
+}
+.todoItems .EditButton:hover,.todoItemsAdd button:hover{
+    background-color: rgb(4, 144, 34);
+}
+.addTodo{
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(114, 192, 131);
+    color: white;
+    border-radius: 5px;
+}
+.addTodo:hover{
+    background-color: rgb(4, 144, 34);
+    cursor: pointer;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-top: 10px;
+}
+
+.formGroup label{
+    color: rgb(153, 153, 153);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.formGroup input{
+    background-color: rgb(211, 211, 211);
+    border: none;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+}
+.noTodo{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    width: 400px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+    margin: 0 auto;
+}

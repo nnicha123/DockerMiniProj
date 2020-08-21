@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend-ct:
+    build: ./backend
+    restart: always
+    ports:
+      - '8000:8000'
+  frontend-ct:
+    build: ./frontend
+    restart: always
+    ports:
+      - '3000:3000'
+    stdin_open: true
+  database-ct:
+    image: 'mysql'
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Ninat1995
+      MYSQL_DATABASE: my_todo
